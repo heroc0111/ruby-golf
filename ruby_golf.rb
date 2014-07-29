@@ -8,6 +8,16 @@ module RubyGolf
   #         v - number of visible trailing numbers
   # output: x'ed out string
   def self.x_out_numbers(n, v)
+    if n.length <= v
+      return n
+    end
+    
+    result = ''
+    for i in 0..n.length-v-1
+      result += 'x'
+    end
+    result += n[n.length-v..n.length] 
+    p result
   end
 
 

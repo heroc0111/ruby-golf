@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-ruby "2.1.2"
+ruby "2.0.0"
 
 gem "guard-minitest"
 gem "minitest-ruby_golf_metrics"
