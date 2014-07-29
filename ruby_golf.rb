@@ -23,6 +23,8 @@ module RubyGolf
   # ouput:  a 'ruby style' version of the identifier: all lowercase, former case
   #         changes to upper case get a prepended underscore
   def self.underscore(s)
+    match_data = s.scan /[a-zA-Z][a-z]*([A-Z][a-z]*)+/
+    p match_data
   end
 
 
