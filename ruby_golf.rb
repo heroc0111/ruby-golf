@@ -11,7 +11,7 @@ module RubyGolf
     if n.length <= v
       n
     else 
-      "xxxxxxx"[0..n.length-v-1] + n[n.length-v..n.length] 
+      ("x"*(n.length-v)) + n[n.length-v..n.length] 
     end    
   end
 
