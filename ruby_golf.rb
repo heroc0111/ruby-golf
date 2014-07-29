@@ -9,15 +9,10 @@ module RubyGolf
   # output: x'ed out string
   def self.x_out_numbers(n, v)
     if n.length <= v
-      return n
-    end
-    
-    result = ''
-    for i in 0..n.length-v-1
-      result += 'x'
-    end
-    result += n[n.length-v..n.length] 
-    p result
+      n
+    else 
+      "xxxxxxx"[0..n.length-v-1] + n[n.length-v..n.length] 
+    end    
   end
 
 
